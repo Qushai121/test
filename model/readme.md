@@ -1,0 +1,1 @@
+Semua Yang ada di folder model ini perumpaman dari bentuk (table, sql) / (document, no sql) di db

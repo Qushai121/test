@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import url("https://fonts.google.com/specimen/Rubik");
+@import "./icon.css";
+
+@theme {
+  --color-primary: #8bac3e;
+}
+
+@theme {
+  --font-rubik: "Rubik", sans-serif;
+}
+
+:root {
+  @apply font-rubik;
+}
