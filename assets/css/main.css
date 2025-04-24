@@ -1,9 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
-@import url("https://fonts.google.com/specimen/Rubik");
 @import "./icon.css";
-
 @theme {
   --color-primary: #8bac3e;
+  --color-light-1: #757575;
+  --color-red-1: #e7462d;
+  --color-dark-40: #757575;
+  --color-orange-1: #ff8412;
+  --color-dark-1: #c9c9c9;
+  --color-dark: #333333;
+  --color-light-gray-2: #f2f2f2;
 }
 
 @theme {

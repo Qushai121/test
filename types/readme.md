@@ -1,0 +1,1 @@
+Folder type ini biasa di guanakan untuk type data local dan common dan private khusus app

@@ -1,0 +1,1 @@
+Dummy folder biasanya di pakai untuk slicing web namun tim backend blm jalan, dan dummy ini bisa juga menggantikan fixture cypress untuk testing end to end kalau tidak mau pakai json 

@@ -3,11 +3,15 @@ import type { Severity } from "~/types/severity.type";
 
 export type ButtonProps = {
   // change the color or button
-  severity: Severity;
-  // used to determine whether button bg is should be shouw or no
-  useBackground: boolean;
+  // @default "primary"
+  severity?: Severity;
+  
+  // used to determine whether button bg is should be shown or no
+  // @default true
+  useBackground?: boolean;
+  
   //   class can overide useBackground and severity
-  class: any;
+  class?: any;
 };
 
 export type ButtonEvents = {

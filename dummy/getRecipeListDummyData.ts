@@ -1,0 +1,112 @@
+import type { GetRecipeListResponseDto } from "~/dto/recipe/getRecipeListDto.type";
+
+export const getRecipeListDummyData: GetRecipeListResponseDto = {
+  data: [
+    {
+      id: 1,
+      name: "Pizza Paperoni",
+      rating: 4,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group.png",
+      category: {
+        id: 2,
+        name: "Pizza",
+        icon: "/categoryRecipe/pizza 1.svg",
+        colorScheme: "#E4F2F4",
+      },
+    },
+    {
+      id: 2,
+      name: "Pizza Meat",
+      rating: 3,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-1.png",
+      category: {
+        id: 2,
+        name: "Pizza Meat",
+        icon: "/categoryRecipe/pizza 1.svg",
+        colorScheme: "#E4F2F4",
+      },
+    },
+    {
+      id: 3,
+      name: "Doner Kebab",
+      rating: 5,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-2.png",
+      category: {
+        id: 3,
+        name: "Kebab",
+        icon: "/categoryRecipe/kebab 1.svg",
+        colorScheme: "#EAEEFA",
+      },
+    },
+    {
+      id: 4,
+      name: "Salmon Roll",
+      rating: 4,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-3.png",
+      category: {
+        id: 4,
+        name: "Salmon",
+        icon: "/categoryRecipe/salmon 1.svg",
+        colorScheme: "#F9EEF3",
+      },
+    },
+    {
+      id: 5,
+      name: "Cupcake Choco",
+      rating: 4,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-4.png",
+      category: {
+        id: 1,
+        name: "Cupcake",
+        icon: "/categoryRecipe/Frame.svg",
+        colorScheme: "#F0FEEB",
+      },
+    },
+    {
+      id: 6,
+      name: "Doughnut Milk",
+      rating: 5,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-5.png",
+      category: {
+        id: 5,
+        name: "Doughnut",
+        icon: "/categoryRecipe/doughnut 1.svg",
+        colorScheme: "#F3F7D9",
+      },
+    },
+    {
+      id: 7,
+      name: "Doughnut Unicorn",
+      rating: 4,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-6.png",
+      category: {
+        id: 5,
+        name: "Doughnut",
+        icon: "/categoryRecipe/doughnut 1.svg",
+        colorScheme: "#F3F7D9",
+      },
+    },
+    {
+      id: 8,
+      name: "Kathi Kebab",
+      rating: 4,
+      maxRatting: 5,
+      thumbnail: "/recipe/Mask Group-7.png",
+      category: {
+        id: 3,
+        name: "Kebab",
+        icon: "/categoryRecipe/kebab 1.svg",
+        colorScheme: "#EAEEFA",
+      },
+    },
+  ],
+  message: "Successfully get recipe list",
+  totalRecord: 10,
+};
