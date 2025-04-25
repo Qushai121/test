@@ -42,7 +42,7 @@
 }
 
 .foot__ldg-page-container {
-  @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-[62px] py-[74px] mx-4 md:mx-8 xl:mx-[110px];
+  @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-[62px] py-[74px] md:mx-8 xl:mx-[110px];
 }
 
 .foot__ldg-page-logo {
