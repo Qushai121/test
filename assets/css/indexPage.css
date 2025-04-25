@@ -1,3 +1,62 @@
-.landing_page_layout_navbar_mobile_container {
-  @apply fixed bottom-0 h-[89px] w-full backdrop-blur-xs;
+.index__ldg-page-moto-section {
+  @apply relative flex flex-col justify-center items-center pb-20 pt-[160px];
+}
+
+.index__ldg-page-moto-section-bg {
+  @apply opacity-3 z-0 absolute top-0 object-cover w-full h-full;
+}
+
+.index__ldg-page-moto-section-container {
+  @apply relative z-10 grid w-full px-4 md:px-8 xl:px-32 md:grid-rows-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-rows-2 gap-4 items-center justify-center;
+}
+
+.index__ldg-page-moto-section-title {
+  @apply row-span-1 xl:h-full xl:flex xl:items-end lg:w-[482px] text-5xl leading-16 text-primary font-medium md:text-[64px];
+}
+
+.index__ldg-page-moto-section-review-container {
+  @apply row-span-2 xl:row-span-2 md:col-span-1 lg:col-start-2 grid justify-start lg:justify-center xl:justify-end w-full h-fit py-10;
+}
+
+.index__ldg-page-moto-section-review-bg {
+  @apply bg-light-1/10 rounded-full w-[240px] h-[240px] xl:w-[495px] xl:h-[495px] grid justify-center items-center relative;
+}
+
+.index__ldg-page-moto-section-review-img {
+  @apply w-[200px] h-[200px] xl:w-[415px] xl:h-[415px];
+}
+
+.index__ldg-page-moto-section-review-card {
+  @apply bg-white/75 backdrop-blur-[11px] shadow-xs px-8 py-4 grid grid-cols-[52px_auto] rounded-[17px] gap-x-4 grid-rows-[auto] absolute h-[93x] w-fit bottom-0 -right-[140px] xl:left-0;
+}
+
+.index__ldg-page-moto-section-review-card-img {
+  @apply w-[52px] h-[52px] col-span-1 row-span-3;
+}
+
+.index__ldg-page-moto-section-review-card-title {
+  @apply text-sm leading-[22px] text-nowrap font-semibold row-span-1;
+}
+
+.index__ldg-page-moto-section-review-card-category {
+  @apply text-xs leading-[14px] font-normal row-span-1 h-fit text-dark-40;
+}
+
+.index__ldg-page-moto-section-review-card-rating {
+  @apply row-span-1 py-2;
+}
+
+.index__ldg-page-moto-section-desc-container {
+  @apply row-span-1 md:row-span-1 lg:w-[482px] flex flex-col gap-4 xl:h-full;
+}
+
+.index__ldg-page-moto-section-desc-content {
+  @apply text-lg leading-[29px] text-light-1;
+}
+
+.index__ldg-page-moto-section-action-container {
+  @apply flex items-center gap-4;
+}
+.index__ldg-page-moto-section-action {
+  @apply text-sm font-medium leading-[22px];
 }

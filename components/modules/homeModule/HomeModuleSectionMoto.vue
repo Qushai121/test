@@ -1,72 +1,56 @@
 <script lang="ts" setup></script>
 <template>
-  <section class="relative flex flex-col justify-center items-center pb-20 pt-[160px]">
+  <section class="index__ldg-page-moto-section">
     <div
-      class="bg-[url('/assets/images/home/home_bg_section_1.png')] opacity-3 z-0 absolute top-0 object-cover w-full h-full"
+      class="bg-[url('/assets/images/home/home_bg_section_1.png')] index__ldg-page-moto-section-bg"
     ></div>
 
-    <div
-      class="relative z-10 grid w-full px-4 md:px-8 xl:px-32 md:grid-rows-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-rows-3 gap-4 items-center justify-center"
-    >
-      <h1
-        class="row-span-1 xl:h-full xl:flex xl:items-end lg:w-[482px] text-5xl leading-16 text-primary font-medium md:text-[64px]"
-      >
-        Good Food Us Good Mood
-      </h1>
+    <div class="index__ldg-page-moto-section-container">
+      <h1 class="index__ldg-page-moto-section-title">Good Food Us Good Mood</h1>
 
-      <div
-        class="row-span-2 xl:row-span-3 md:col-span-1 lg:col-start-2 grid justify-start lg:justify-center xl:justify-end w-full h-fit py-10"
-      >
-        <div
-          class="bg-light-1/10 rounded-full w-[240px] h-[240px] xl:w-[495px] xl:h-[495px] grid justify-center items-center relative"
-        >
+      <div class="index__ldg-page-moto-section-review-container">
+        <div class="index__ldg-page-moto-section-review-bg">
           <img
             src="/assets/images/home/green_salad_tomato.png"
             alt=""
-            class="w-[200px] h-[200px] xl:w-[415px] xl:h-[415px]"
+            class="index__ldg-page-moto-section-review-img"
           />
-          <div
-            class="bg-white/75 backdrop-blur-[11px] shadow-xs px-8 py-4 grid grid-cols-[52px_auto] rounded-[17px] gap-x-4 grid-rows-[auto] absolute h-[93x] w-fit bottom-0 -right-[140px] xl:left-0"
-          >
+          <div class="index__ldg-page-moto-section-review-card">
             <img
               src="/assets/images/home/green_salad_tomato.png"
               alt=""
-              class="w-[52px] h-[52px] col-span-1 row-span-3"
+              class="index__ldg-page-moto-section-review-card-img"
             />
 
-            <p
-              class="text-sm leading-[22px] text-nowrap font-semibold row-span-1"
-            >
+            <p class="index__ldg-page-moto-section-review-card-title">
               Green Salah Tomato
             </p>
-            <p
-              class="text-xs leading-[14px] font-normal row-span-1 h-fit text-dark-40"
-            >
+            <p class="index__ldg-page-moto-section-review-card-category">
               Tomato
             </p>
-            <div class="row-span-1 py-2">
+            <div class="index__ldg-page-moto-section-review-card-rating">
               <Rating :max-rating="5" :rating="4" />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="row-span-1 md:row-span-1 lg:w-[482px] flex flex-col gap-4">
-        <p class="text-lg leading-[29px] text-light-1">
+      <div class="index__ldg-page-moto-section-desc-container">
+        <p class="index__ldg-page-moto-section-desc-content">
           I would think that conserving our natural resources should be a
           conservative position: Not to waste food, and not to throw away a lot
           of the food that we buy.
         </p>
 
-        <div class="flex items-center gap-4">
+        <div class="index__ldg-page-moto-section-action-container">
           <Button
             severity="primary"
-            class="text-sm font-medium leading-[22px] shadow-xl"
+            class="index__ldg-page-moto-section-action shadow-xl"
             >Daftar Sekarang</Button
           >
           <Button
             severity="contrast"
-            class="text-sm font-medium leading-[22px] text-dark"
+            class="index__ldg-page-moto-section-action "
             >About Us</Button
           >
         </div>
