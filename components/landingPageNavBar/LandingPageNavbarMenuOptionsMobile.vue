@@ -2,7 +2,7 @@
 
 <template>
   <div class="nav-mob__ldg-page-menu-container">
-    <NuxtLink href="/home" class="nav-mob__ldg-page-menu-body">
+    <NuxtLink href="/" class="nav-mob__ldg-page-menu-body">
       <Icon icon="menu" class="nav-mob__ldg-page-menu-icon" />
       <p class="nav-mob__ldg-page-menu-label">Home</p>
     </NuxtLink>

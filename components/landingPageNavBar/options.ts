@@ -3,7 +3,7 @@ import type { MenuItem } from "~/types/menuItem.type";
 export const landingPageNavBarOptions: MenuItem[] = [
   {
     name: "Home",
-    url: "/home",
+    url: "/",
   },
   {
     name: "About",
