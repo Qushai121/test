@@ -11,4 +11,4 @@ export type IconProps = {
   icon: IconOptions;
 };
 
-type IconOptions = "menu" | "mail" | "phone" | "instagram" | "star" | "arrow-left" | "arrow-right"; 
+export type IconOptions = "menu" | "mail" | "phone" | "instagram" | "star" | "arrow-left" | "arrow-right"; 

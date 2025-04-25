@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex justify-between px-8 xl:px-32 py-7 items-center">
+  <div class="flex justify-between px-8 fixed w-full xl:px-32 py-7 items-center z-50 backdrop-blur-xs">
     <img
       src="/assets/images/elemes-logo.png"
       alt=""

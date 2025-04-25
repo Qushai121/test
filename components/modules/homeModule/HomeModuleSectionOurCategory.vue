@@ -5,26 +5,26 @@ const { data } = await useFetch("/api/category-recipe");
 const isMobile = useIsMobile();
 </script>
 <template>
-  <section class="py-20 xl:mx-[110px] mx-4 md:mx-8">
+  <section class="py-20 mx-4 md:mx-8 xl:mx-[110px]">
     <div class="text-2xl leading-[30px] font-medium text-dark">
-      <h1>Browser Our Trending</h1>
-      <span class="text-primary">Receipt</span>
+      <h1>Browser Our Category</h1>
+      <span class="text-primary">Recipe</span>
     </div>
 
     <div
-      class="flex flex-nowrap w-fit gap-2 my-14 overflow-x-scroll lg:overflow-hidden h-[195px]"
+      class="flex mx-auto w-full justify-start flex-nowrap gap-2 my-14 overflow-auto lg:h-[220px] lg:overflow-hidden"
     >
       <div
         v-for="categoryRecipe in data?.data"
         :style="{
           backgroundColor: categoryRecipe.colorScheme,
         }"
-        class="rounded-lg relative col-span-1 w-[230px] h-[175px] hover:h-[195px] transition-all duration-300 ease-in-out grid justify-center py-[30px] bg-red-400 overflow-hidden"
+        class="rounded-lg relative min-w-[230px] col-span-1 w-[230px] h-[175px] group hover:h-[195px] transition-all duration-300 ease-in-out grid justify-center py-[30px]"
       >
         <img
           src="/assets/images/home/home_bg_section_1.png"
           alt=""
-          class="absolute bg-cover w-full h-full opacity-5 z-0"
+          class="absolute object-cover w-full h-full opacity-0 group-hover:opacity-5 z-0 transition-all duration-300 ease-in-out"
         />
 
         <div class="flex flex-col items-center justify-center w-[100px]">
@@ -43,7 +43,10 @@ const isMobile = useIsMobile();
       </div>
     </div>
 
-    <div v-if="!isMobile" class="flex w-full justify-end items-center gap-x-[13px]">
+    <div
+      v-if="!isMobile"
+      class="flex w-full justify-end items-center gap-x-[13px]"
+    >
       <Button severity="primary">
         <div class="flex gap-[7px] items-center">
           <div class="bg-white rounded-full p-1.5">

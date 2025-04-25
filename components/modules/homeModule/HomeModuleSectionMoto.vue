@@ -1,8 +1,8 @@
 <script lang="ts" setup></script>
 <template>
-  <section class="relative flex flex-col justify-center items-center py-20">
+  <section class="relative flex flex-col justify-center items-center pb-20 pt-[160px]">
     <div
-      class="bg-[url('/assets/images/home/home_bg_section_1.png')] opacity-3 z-0 h-full absolute w-full"
+      class="bg-[url('/assets/images/home/home_bg_section_1.png')] opacity-3 z-0 absolute top-0 object-cover w-full h-full"
     ></div>
 
     <div
@@ -66,7 +66,7 @@
           >
           <Button
             severity="contrast"
-            class="text-sm font-medium leading-[22px] text-light-gray-2"
+            class="text-sm font-medium leading-[22px] text-dark"
             >About Us</Button
           >
         </div>

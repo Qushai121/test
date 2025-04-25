@@ -25,8 +25,8 @@ const btnClassSeverity = computed(() => {
 <template>
   <button
     @click="$emit('click', $event)"
-    class="px-[18px] py-2.5 font-medium text-sm rounded-[100px]"
-    :class="btnClassSeverity"
+    class="px-[18px] py-2.5 cursor-pointer font-medium text-sm rounded-[100px]"
+    :class="[btnClassSeverity, props.class]"
   >
     <slot />
   </button>
