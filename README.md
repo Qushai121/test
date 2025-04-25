@@ -13,7 +13,7 @@ npm install
 
 # pnpm
 pnpm install
-## if you dont pnpm and already have npm run this in your commandline/cmd npm install -g pnpm@latest-10  
+## if you dont have pnpm and already have npm run this in your commandline/cmd npm install -g pnpm@latest-10  
 ```
 
 ## Setup
