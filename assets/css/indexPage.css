@@ -118,3 +118,37 @@
   @apply bg-white rounded-full p-1.5;
 }
 /* END INDEX OUR CATEGORY SECTION */
+
+/* START INDEX TRENDING RECIPE SECTION */
+.index__ldg-page-rcp-trend-section-container-list {
+  @apply grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-14 overflow-x-scroll lg:overflow-x-hidden ;
+}
+
+.index__ldg-page-rcp-trend-section-card {
+  @apply rounded-[17px] h-fit relative overflow-hidden;
+}
+
+.index__ldg-page-rcp-trend-section-card-bg {
+  @apply absolute object-cover w-full h-full opacity-0 z-0 transition-all duration-300 ease-in-out;
+}
+
+.index__ldg-page-rcp-trend-section-card-content-container {
+  @apply px-5 py-8 z-10 relative;
+}
+
+.index__ldg-page-rcp-trend-section-card-content-img {
+  @apply w-[118px] h-[114px] rounded-lg;
+}
+
+.index__ldg-page-rcp-trend-section-card-content-title {
+  @apply text-[26px] leading-[50px] font-medium mt-[18px];
+}
+
+.index__ldg-page-rcp-trend-section-card-content-ctgry {
+  @apply text-lg leading-[100%] font-medium text-primary mb-[18px];
+}
+
+.index__ldg-page-rcp-trend-section-action-all-recipe {
+  @apply flex justify-center;
+}
+/* END INDEX TRENDING RECIPE SECTION */

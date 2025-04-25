@@ -6,15 +6,15 @@ const { data: recipeList } = useFetch("/api/recipe");
   <section class="index__ldg-page-section-container">
     <div class="index__ldg-page-section-container-title">
       <h1>Browser Our Trending</h1>
-      <span class="index__ldg-page-section-container-title--higlight">Recipe</span>
+      <span class="index__ldg-page-section-container-title--higlight"
+        >Recipe</span
+      >
     </div>
 
-    <div
-      class="grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-14 overflow-x-scroll lg:overflow-x-hidden no-scrollbar"
-    >
+    <div class="index__ldg-page-rcp-trend-section-container-list no-scrollbar">
       <div
         v-for="recipe in recipeList?.data"
-        class="rounded-[17px] h-fit relative group overflow-hidden"
+        class="index__ldg-page-rcp-trend-section-card group"
         :style="{
           backgroundColor: recipe.category.colorScheme,
         }"
@@ -22,25 +22,25 @@ const { data: recipeList } = useFetch("/api/recipe");
         <img
           src="/assets/images/home/home_bg_section_1.png"
           alt=""
-          class="absolute object-cover w-full h-full opacity-0 group-hover:opacity-5 z-0 transition-all duration-300 ease-in-out"
+          class="index__ldg-page-rcp-trend-section-card-bg group-hover:opacity-5"
         />
-        <div class="px-5 py-8 z-10 relative">
+        <div class="index__ldg-page-rcp-trend-section-card-content-container">
           <img
             :src="recipe.thumbnail"
             alt=""
-            class="w-[118px] h-[114px] rounded-lg"
+            class="index__ldg-page-rcp-trend-section-card-content-img"
           />
-          <p class="text-[26px] leading-[50px] font-medium mt-[18px]">
+          <p class="index__ldg-page-rcp-trend-section-card-content-title">
             {{ recipe.name }}
           </p>
-          <p class="text-lg leading-[100%] font-medium text-primary mb-[18px]">
+          <p class="index__ldg-page-rcp-trend-section-card-content-ctgry">
             {{ recipe.category.name }}
           </p>
           <Rating :max-rating="recipe.maxRatting" :rating="recipe.rating" />
         </div>
       </div>
     </div>
-    <div class="flex justify-center " >
+    <div class="index__ldg-page-rcp-trend-section-action-all-recipe">
       <Button>ALL Recipe</Button>
     </div>
   </section>
