@@ -7,23 +7,23 @@ defineProps<{
 </script>
 
 <template>
-  <div class="flex justify-between px-8 fixed w-full xl:px-32 py-7 items-center z-50 backdrop-blur-xs">
+  <div class="nav__ldg-page-container">
     <img
       src="/assets/images/elemes-logo.png"
       alt=""
-      class="w-[150px] h-9 lg:w-[207px] lg:h-[50px]"
+      class="nav__ldg-page-logo"
     />
 
     <div class="flex gap-8" v-if="!menuOptionsVisiblity">
       <div v-for="option in landingPageNavBarOptions">
         <NuxtLink
           :href="option.url"
-          class="text-light-1 text-sm leading-[22px] font-medium relative"
+          class="nav__ldg-page-menu-item"
         >
           <p>{{ option.name }}</p>
           <Badge
             v-if="option.badge"
-            class="absolute -top-4 -right-[18px]"
+            class="nav__ldg-page-menu-item-badge"
             :severity="option.badge?.severity"
           >
             {{ option.badge?.name }}

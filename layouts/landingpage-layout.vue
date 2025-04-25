@@ -4,11 +4,14 @@ const isMobileSize = useIsMobile();
 </script>
 
 <template>
-  <div class="flex flex-col relative min-h-[100vh]">
+  <div class="layout">
     <LandingPageNavBar :menu-options-visiblity="isMobileSize" />
     <slot />
     <LandingPageFooter />
-    <div v-if="isMobileSize" class="fixed bottom-0 h-[89px] w-full backdrop-blur-xs">
+    <div
+      v-if="isMobileSize"
+      class="layout__nav-ldg-page-mobile"
+    >
       <LandingPageNavBarLandingPageNavbarMenuOptionsMobile />
     </div>
   </div>

@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import "tailwindcss";
 @import "./icon.css";
+@import "./common.css";
+@import "./layouts.css";
+@import "./indexPage.css";
+
 @theme {
   --color-primary: #8bac3e;
   --color-light-1: #757575;

@@ -1,0 +1,94 @@
+/* layouts.css used for all component used directly inside layout files */
+
+/* ldg page stand for Landing Page */
+.layout__nav-ldg-page-mobile {
+  @apply fixed bottom-0 h-[89px] w-full backdrop-blur-xs;
+}
+
+.nav__ldg-page-container {
+  @apply flex justify-between px-8 fixed w-full xl:px-32 py-7 items-center z-50 backdrop-blur-xs;
+}
+
+.nav__ldg-page-logo {
+  @apply w-[150px] h-9 lg:w-[207px] lg:h-[50px];
+}
+
+.nav__ldg-page-menu-item {
+  @apply text-light-1 text-sm leading-[22px] font-medium relative;
+}
+
+.nav__ldg-page-menu-item-badge {
+  @apply absolute -top-4 -right-[18px];
+}
+
+.nav-mob__ldg-page-menu-container {
+  @apply h-full grid grid-cols-3 items-center;
+}
+
+.nav-mob__ldg-page-menu-body {
+  @apply flex flex-col items-center text-light-1;
+}
+
+.nav-mob__ldg-page-menu-icon {
+  @apply !w-[39px] !h-[39px];
+}
+
+.nav-mob__ldg-page-menu-label {
+  @apply text-sm leading-6;
+}
+
+.foot__ldg-page-section {
+  @apply py-20;
+}
+
+.foot__ldg-page-container {
+  @apply grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 px-[62px] py-[74px] mx-4 md:mx-8 xl:mx-[110px];
+}
+
+.foot__ldg-page-logo {
+  @apply w-[207px] h-[50px] object-cover;
+}
+
+.foot__ldg-page-address {
+  @apply text-light-1 text-sm leading-5 mt-5;
+}
+
+.foot__ldg-page-contact-menu {
+  @apply flex gap-2 mt-[33px];
+}
+
+.foot__ldg-page-contact-menu-item {
+  @apply !rounded-full text-primary !w-[40px] !h-[40px] flex justify-center items-center hover:text-white hover:bg-primary transition-all ease-in-out;
+}
+
+.foot__ldg-page-contact-menu-item-icon {
+  @apply !w-[20px] !h-[20px];
+}
+
+.foot__ldg-page-group-container {
+  @apply w-fit;
+}
+
+.foot__ldg-page-group-title {
+  @apply text-dark font-medium text-lg leading-6;
+}
+
+.foot__ldg-page-group-menu {
+  @apply mt-[33px] flex flex-col gap-[19px];
+}
+
+.foot__ldg-page-group-menu-item {
+  @apply text-sm leading-4 text-light-1;
+}
+
+.foot__ldg-page-newsletter-contact {
+  @apply flex gap-1;
+}
+
+.foot__ldg-page-newsletter-contact-icon {
+  @apply !h-5 !w-5;
+}
+
+.foot__ldg-page-newsletter-contact-label {
+  @apply text-black text-sm leading-6;
+}
