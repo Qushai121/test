@@ -1,3 +1,18 @@
+/* START COMMON PAGE SPECIFIC */
+.index__ldg-page-section-container {
+  @apply py-20 xl:mx-[110px] mx-4 md:mx-8;
+}
+
+.index__ldg-page-section-container-title {
+  @apply text-2xl leading-[30px] font-medium text-dark;
+}
+
+.index__ldg-page-section-container-title--higlight {
+  @apply text-primary;
+}
+/* END COMMON PAGE SPECIFIC */
+
+/* START INDEX MOTO SECTION */
 .index__ldg-page-moto-section {
   @apply relative flex flex-col justify-center items-center pb-20 pt-[160px];
 }
@@ -60,3 +75,46 @@
 .index__ldg-page-moto-section-action {
   @apply text-sm font-medium leading-[22px];
 }
+/* END INDEX MOTO SECTION */
+
+/* START INDEX OUR CATEGORY SECTION */
+.index__ldg-page-ctgry-section-container-list {
+  @apply flex mx-auto w-full justify-start flex-nowrap gap-2 my-14 overflow-auto lg:h-[220px] lg:overflow-hidden;
+}
+
+.index__ldg-page-ctgry-section-card {
+  @apply rounded-lg relative min-w-[230px] col-span-1 w-[230px] h-[175px] hover:h-[195px] transition-all duration-300 ease-in-out grid justify-center py-[30px];
+}
+.index__ldg-page-ctgry-section-card-bg {
+  @apply absolute object-cover w-full h-full opacity-0  z-0 transition-all duration-300 ease-in-out;
+}
+
+.index__ldg-page-ctgry-section-card-content-container {
+  @apply flex flex-col items-center justify-center w-[100px];
+}
+.index__ldg-page-ctgry-section-card-content-img {
+  @apply !w-[47px] !h-[47px] mb-[23px];
+}
+.index__ldg-page-ctgry-section-card-content-title {
+  @apply text-base text-dark font-medium leading-[22px] mb-1;
+}
+
+.index__ldg-page-ctgry-section-card-content-count {
+  @apply text-sm text-dark font-normal leading-4 text-nowrap;
+}
+
+.index__ldg-page-ctgry-section-slider-container {
+  @apply flex w-full justify-end items-center gap-x-[13px];
+}
+
+.index__ldg-page-ctgry-section-slider-action {
+  @apply flex gap-[7px] items-center;
+}
+.index__ldg-page-ctgry-section-slider-action-label {
+  @apply font-medium text-base;
+}
+
+.index__ldg-page-ctgry-section-slider-action-icon {
+  @apply bg-white rounded-full p-1.5;
+}
+/* END INDEX OUR CATEGORY SECTION */

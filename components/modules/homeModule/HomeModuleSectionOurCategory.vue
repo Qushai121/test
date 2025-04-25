@@ -5,38 +5,38 @@ const { data } = await useFetch("/api/category-recipe");
 const isMobile = useIsMobile();
 </script>
 <template>
-  <section class="py-20 mx-4 md:mx-8 xl:mx-[110px]">
-    <div class="text-2xl leading-[30px] font-medium text-dark">
+  <section class="index__ldg-page-section-container">
+    <div class="index__ldg-page-section-container-title">
       <h1>Browser Our Category</h1>
-      <span class="text-primary">Recipe</span>
+      <span class="index__ldg-page-section-container-title--higlight"
+        >Recipe</span
+      >
     </div>
 
-    <div
-      class="flex mx-auto w-full justify-start flex-nowrap gap-2 my-14 overflow-auto lg:h-[220px] lg:overflow-hidden"
-    >
+    <div class="index__ldg-page-ctgry-section-container-list">
       <div
         v-for="categoryRecipe in data?.data"
         :style="{
           backgroundColor: categoryRecipe.colorScheme,
         }"
-        class="rounded-lg relative min-w-[230px] col-span-1 w-[230px] h-[175px] group hover:h-[195px] transition-all duration-300 ease-in-out grid justify-center py-[30px]"
+        class="index__ldg-page-ctgry-section-card group"
       >
         <img
           src="/assets/images/home/home_bg_section_1.png"
           alt=""
-          class="absolute object-cover w-full h-full opacity-0 group-hover:opacity-5 z-0 transition-all duration-300 ease-in-out"
+          class="index__ldg-page-ctgry-section-card-bg group-hover:opacity-5"
         />
 
-        <div class="flex flex-col items-center justify-center w-[100px]">
+        <div class="index__ldg-page-ctgry-section-card-content-container">
           <img
             :src="categoryRecipe.icon"
             :alt="categoryRecipe.name"
-            class="!w-[47px] !h-[47px] mb-[23px]"
+            class="index__ldg-page-ctgry-section-card-content-img"
           />
-          <p class="text-base text-dark font-medium leading-[22px] mb-1">
+          <p class="index__ldg-page-ctgry-section-card-content-title">
             {{ categoryRecipe.name }}
           </p>
-          <p class="text-sm text-dark font-normal leading-4 text-nowrap">
+          <p class="index__ldg-page-ctgry-section-card-content-count">
             {{ categoryRecipe.countRecipes }} items
           </p>
         </div>
@@ -45,20 +45,26 @@ const isMobile = useIsMobile();
 
     <div
       v-if="!isMobile"
-      class="flex w-full justify-end items-center gap-x-[13px]"
+      class="index__ldg-page-ctgry-section-slider-container"
     >
       <Button severity="primary">
-        <div class="flex gap-[7px] items-center">
-          <div class="bg-white rounded-full p-1.5">
+        <div
+          class="index__ldg-page-ctgry-section-slider-action"
+          @action="`here`"
+        >
+          <div class="index__ldg-page-ctgry-section-slider-action-icon">
             <Icon icon="arrow-left" severity="primary" />
           </div>
-          <p class="font-medium text-base">PREV</p>
+          <p class="index__ldg-page-ctgry-section-slider-action-label">PREV</p>
         </div>
       </Button>
       <Button severity="primary">
-        <div class="flex gap-[7px] items-center">
-          <p class="font-medium text-base">NEXT</p>
-          <div class="bg-white rounded-full p-1.5">
+        <div
+          class="index__ldg-page-ctgry-section-slider-action"
+          @action="`here`"
+        >
+          <p class="index__ldg-page-ctgry-section-slider-action-label">NEXT</p>
+          <div class="index__ldg-page-ctgry-section-slider-action-icon">
             <Icon icon="arrow-right" severity="primary" />
           </div>
         </div>

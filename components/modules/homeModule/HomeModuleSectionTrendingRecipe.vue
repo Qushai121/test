@@ -3,10 +3,10 @@ const { data: recipeList } = useFetch("/api/recipe");
 </script>
 
 <template>
-  <section class="py-20 xl:mx-[110px] mx-4 md:mx-8">
-    <div class="text-2xl leading-[30px] font-medium text-dark">
+  <section class="index__ldg-page-section-container">
+    <div class="index__ldg-page-section-container-title">
       <h1>Browser Our Trending</h1>
-      <span class="text-primary">Recipe</span>
+      <span class="index__ldg-page-section-container-title--higlight">Recipe</span>
     </div>
 
     <div
