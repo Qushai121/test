@@ -1,0 +1,1 @@
+Setiap input punya input pass text etc, dibuat component masing masing guna mempersimple kondisi apalagi jika ada validasi pakai regex, formating, dll

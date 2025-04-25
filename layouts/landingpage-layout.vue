@@ -8,7 +8,7 @@ const isMobileSize = useIsMobile();
     <LandingPageNavBar :menu-options-visiblity="isMobileSize" />
     <slot />
     <LandingPageFooter />
-    <div v-if="isMobileSize" class="absolute bottom-0 h-[89px] w-full">
+    <div v-if="isMobileSize" class="fixed bottom-0 h-[89px] w-full backdrop-blur-xs">
       <LandingPageNavBarLandingPageNavbarMenuOptionsMobile />
     </div>
   </div>

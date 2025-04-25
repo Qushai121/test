@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import InputEmail from "../inputEmail/InputEmail.vue";
 import {
   aboutUsMenuItems,
   contactEmail,
@@ -10,6 +11,9 @@ const leftContactList = [contactEmail, contactPhone, contactInstagram];
 const rightContactList = [contactEmail, contactPhone];
 
 const { data: categoryRecipeList } = await useFetch("/api/category-recipe");
+
+const email = ref<string>();
+
 </script>
 
 <template>
@@ -31,7 +35,7 @@ const { data: categoryRecipeList } = await useFetch("/api/category-recipe");
           <div v-for="contact in leftContactList">
             <Button
               severity="contrast"
-              class="!rounded-full text-primary !w-[40px] !h-[40px] flex justify-center items-center hover:text-white hover:bg-primary"
+              class="!rounded-full text-primary !w-[40px] !h-[40px] flex justify-center items-center hover:text-white hover:bg-primary transition-all ease-in-out"
             >
               <div class="py-2">
                 <Icon :icon="contact.icon" class="!w-[20px] !h-[20px]" />
@@ -67,12 +71,20 @@ const { data: categoryRecipeList } = await useFetch("/api/category-recipe");
         </div>
       </div>
 
-      <div class="w-fit" >
+      <div class="w-fit">
         <h3 class="text-dark font-medium text-lg leading-6">Newsletter</h3>
         <div class="mt-[33px] flex flex-col gap-[19px]">
           <p class="text-sm leading-4 text-light-1">
             Get now free 50% discount for all products on your first order
           </p>
+          <InputEmail
+            v-model="email"
+            placeholder="Your email address"
+          >
+            <template #addon-right>
+              <p>Send</p>
+            </template>
+          </InputEmail>
           <div v-for="contact in rightContactList" class="flex gap-1">
             <Icon :icon="contact.icon" severity="primary" class="!h-5 !w-5" />
             <p class="text-black text-sm leading-6">
