@@ -9,16 +9,14 @@ Make sure to install dependencies:
 ```bash
 # npm
 npm install
+## if you dont have npm and node js intalled you can instal in here https://nodejs.org/en 
 
 # pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
+## if you dont pnpm and already have npm run this in your commandline/cmd npm install -g pnpm@latest-10  
 ```
+
+## Setup
 
 ## Development Server
 
@@ -30,12 +28,6 @@ npm run dev
 
 # pnpm
 pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
 ## Production
@@ -48,12 +40,6 @@ npm run build
 
 # pnpm
 pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
 ```
 
 Locally preview production build:
@@ -64,12 +50,6 @@ npm run preview
 
 # pnpm
 pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
