@@ -22,7 +22,7 @@ const { data: recipeList } = useFetch("/api/recipe");
         <img
           src="/assets/images/home/home_bg_section_1.png"
           alt=""
-          class="index__ldg-page-rcp-trend-section-card-bg group-hover:opacity-5"
+          class="index__ldg-page-rcp-trend-section-card-bg opacity-0 group-hover:opacity-5"
         />
         <div class="index__ldg-page-rcp-trend-section-card-content-container">
           <img

@@ -86,7 +86,7 @@
   @apply rounded-lg relative min-w-[230px] col-span-1 w-[230px] h-[175px] hover:h-[195px] transition-all duration-300 ease-in-out grid justify-center py-[30px];
 }
 .index__ldg-page-ctgry-section-card-bg {
-  @apply absolute object-cover w-full h-full opacity-0  z-0 transition-all duration-300 ease-in-out;
+  @apply absolute object-cover w-full h-full z-0 transition-all duration-300 ease-in-out;
 }
 
 .index__ldg-page-ctgry-section-card-content-container {
@@ -121,7 +121,7 @@
 
 /* START INDEX TRENDING RECIPE SECTION */
 .index__ldg-page-rcp-trend-section-container-list {
-  @apply grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-14 overflow-x-scroll lg:overflow-x-hidden ;
+  @apply grid mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 my-14 overflow-x-scroll lg:overflow-x-hidden;
 }
 
 .index__ldg-page-rcp-trend-section-card {
@@ -129,7 +129,7 @@
 }
 
 .index__ldg-page-rcp-trend-section-card-bg {
-  @apply absolute object-cover w-full h-full opacity-0 z-0 transition-all duration-300 ease-in-out;
+  @apply absolute object-cover w-full h-full z-0 transition-all duration-300 ease-in-out;
 }
 
 .index__ldg-page-rcp-trend-section-card-content-container {
