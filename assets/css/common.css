@@ -1,3 +1,15 @@
 .layout {
   @apply flex flex-col relative min-h-[100vh];
 }
+
+.severity__primary-bg-text {
+  @apply text-white bg-primary;
+}
+
+.severity__error-bg-text {
+  @apply text-white bg-red-1;
+}
+
+.severity__contrast-bg-text {
+  @apply text-dark bg-light-gray-2;
+}

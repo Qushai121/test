@@ -10,13 +10,13 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 const btnClassSeverity = computed(() => {
   switch (props.severity) {
     case "primary": {
-      return "text-white bg-primary";
+      return "severity__primary-bg-text";
     }
     case "error": {
-      return "text-white bg-red-1";
+      return "severity__error-bg-text";
     }
     case "contrast": {
-      return "text-dark bg-light-gray-2";
+      return "severity__contrast-bg-text";
     }
   }
 });
@@ -25,7 +25,7 @@ const btnClassSeverity = computed(() => {
 <template>
   <button
     @click="$emit('click', $event)"
-    class="px-[18px] py-2.5 cursor-pointer font-medium text-sm rounded-[100px]"
+    class="btn__comp"
     :class="[btnClassSeverity, props.class]"
   >
     <slot />

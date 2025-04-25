@@ -1,0 +1,11 @@
+.input__email-comp-container {
+  @apply min-w-[250px] h-[40px] flex;
+}
+
+.input__email-comp {
+  @apply border-1 border-r-0 rounded-r-none border-black rounded-lg px-[15px] focus:outline-0;
+}
+
+.input__email-comp-addon-container {
+  @apply bg-primary flex items-center justify-center rounded-r-lg p-2 text-white font-medium text-sm leading-6 cursor-pointer;
+}

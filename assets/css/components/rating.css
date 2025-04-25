@@ -1,0 +1,16 @@
+.rating__comp {
+  @apply flex gap-1 items-center;
+}
+
+.rating__comp-star {
+  @apply h-[11px] w-[11px];
+}
+
+.rating__comp-star--active {
+  @apply text-orange-1;
+}
+
+.rating__comp-star--in-active {
+    @apply text-dark-1;
+  }
+  

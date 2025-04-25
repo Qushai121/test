@@ -14,7 +14,7 @@ const getClassBySeverity = computed(() => {
 
 <template>
   <i
-    class="icon h-4 w-4"
+    class="icon icon__comp"
     :class="[props.icon, props.severity, getClassBySeverity, props.class]"
   />
 </template>

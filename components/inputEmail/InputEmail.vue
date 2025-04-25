@@ -12,17 +12,17 @@ defineEmits<InputEmailEvents>();
 </script>
 
 <template>
-  <div class="min-w-[250px] h-[40px] flex">
+  <div class="input__email-comp-container">
     <input
       type="email"
       :placeholder="props.placeholder"
       v-model="model"
-      class="border-1 border-r-0 rounded-r-none border-black rounded-lg px-[15px] focus:outline-0"
+      class="input__email-comp"
       :class="props.inputClass"
     />
 
     <div
-      class="bg-primary flex items-center justify-center rounded-r-lg p-2 text-white font-medium text-sm leading-6 cursor-pointer"
+      class="input__email-comp-addon-container"
       @click="$emit('addonClick', 'addon-right')"
     >
       <slot name="addon-right" />

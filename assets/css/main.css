@@ -6,6 +6,14 @@
 @import "./layouts.css";
 @import "./indexPage.css";
 
+/* START COMPONENT CSS */
+@import "./components/badge.css";
+@import "./components/button.css";
+@import "./components/icon.css";
+@import "./components/inputEmail.css";
+@import "./components/rating.css";
+/* END COMPONENT CSS */
+
 @theme {
   --color-primary: #8bac3e;
   --color-light-1: #757575;
