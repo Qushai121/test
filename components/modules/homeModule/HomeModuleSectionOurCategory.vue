@@ -24,7 +24,7 @@ const isMobile = useIsMobile();
         <img
           src="/assets/images/home/home_bg_section_1.png"
           alt=""
-          class="index__ldg-page-ctgry-section-card-bg opacity-0 group-hover:opacity-5"
+          class="index__ldg-page-ctgry-section-card-bg opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-5"
         />
 
         <div class="index__ldg-page-ctgry-section-card-content-container">
